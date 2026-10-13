@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Left Ribbon Gradient -->
+    <linearGradient id="vtLeftRibbon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C084FC"/>
+      <stop offset="35%" stop-color="#A855F7"/>
+      <stop offset="70%" stop-color="#7E22CE"/>
+      <stop offset="100%" stop-color="#6B21A8"/>
+    </linearGradient>
+
+    <!-- Bottom Ribbon Loop (Darker Shadow Underfold) -->
+    <linearGradient id="vtRibbonFold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#581C87"/>
+      <stop offset="50%" stop-color="#4C1D95"/>
+      <stop offset="100%" stop-color="#311042"/>
+    </linearGradient>
+
+    <!-- Right Voucher Ticket Gradient -->
+    <linearGradient id="vtTicketGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6D28D9"/>
+      <stop offset="40%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#9333EA"/>
+    </linearGradient>
+
+    <!-- Soft ambient depth shadow without background box -->
+    <filter id="vtShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#6B21A8" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <g id="vouchtrim-mark" filter="url(#vtShadow)" transform="translate(10, 8)">
+    <!-- 3D Underfold Shadow of Ribbon -->
+    <path d="M 98 122 C 104 120 114 108 118 96 L 126 78 C 122 72 108 72 98 84 L 88 98 C 80 110 88 122 98 122 Z" fill="url(#vtRibbonFold)"/>
+
+    <!-- Left Arm of 'V' (Rounded Ribbon) -->
+    <path d="M 48 26
+             C 42 26 36 32 40 42
+             L 82 136
+             C 88 150 106 154 118 144
+             C 126 138 132 126 130 112
+             L 124 96
+             C 118 106 108 116 98 116
+             C 90 116 84 108 80 98
+             L 58 34
+             C 56 28 52 26 48 26 Z" 
+          fill="url(#vtLeftRibbon)"/>
+
+    <!-- Right Arm / Voucher Ticket -->
+    <g transform="rotate(24, 122, 70)">
+      <!-- Main Voucher Body -->
+      <path d="M 98 16 
+               C 98 11, 102 7, 107 7 
+               L 141 7 
+               C 146 7, 150 11, 150 16 
+               L 150 34 
+               C 144 34, 139 39, 139 45 
+               C 139 51, 144 56, 150 56 
+               L 150 102 
+               C 150 107, 146 111, 141 111 
+               L 107 111 
+               C 102 111, 98 107, 98 102 
+               L 98 56 
+               C 104 56, 109 51, 109 45 
+               C 109 39, 104 34, 98 34 
+               Z" 
+            fill="url(#vtTicketGrad)"/>
+
+      <!-- Perforated Tear Line -->
+      <line x1="102" y1="56" x2="146" y2="56" stroke="#ffffff" stroke-width="2.5" stroke-dasharray="3.5,3.5" stroke-linecap="round" opacity="0.8"/>
+
+      <!-- Clean Percentage Symbol (%) -->
+      <g transform="translate(124, 31) scale(1.15)">
+        <!-- Top Circle -->
+        <circle cx="-6.5" cy="-6.5" r="3.2" stroke="#ffffff" stroke-width="2.4" fill="none"/>
+        <!-- Slash -->
+        <line x1="7.5" y1="-8" x2="-7.5" y2="8" stroke="#ffffff" stroke-width="2.8" stroke-linecap="round"/>
+        <!-- Bottom Circle -->
+        <circle cx="6.5" cy="6.5" r="3.2" stroke="#ffffff" stroke-width="2.4" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

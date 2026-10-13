@@ -1,0 +1,6 @@
+{
+  "name": "VouchTrim — Gift cards, delivered in minutes",
+  "description": "Instant digital gift card and voucher platform with real-time delivery tracking, reviews, and admin dashboard.",
+  "permissions": [],
+  "capabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

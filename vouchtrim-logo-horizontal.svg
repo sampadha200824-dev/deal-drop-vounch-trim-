@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="hzVtLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C084FC"/>
+      <stop offset="35%" stop-color="#A855F7"/>
+      <stop offset="70%" stop-color="#7E22CE"/>
+      <stop offset="100%" stop-color="#6B21A8"/>
+    </linearGradient>
+    <linearGradient id="hzVtFold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#581C87"/>
+      <stop offset="50%" stop-color="#4C1D95"/>
+      <stop offset="100%" stop-color="#311042"/>
+    </linearGradient>
+    <linearGradient id="hzVtTicket" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6D28D9"/>
+      <stop offset="40%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#9333EA"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Icon Mark (scaled & placed at left) -->
+  <g transform="translate(6, 4) scale(0.48)">
+    <path d="M 98 122 C 104 120 114 108 118 96 L 126 78 C 122 72 108 72 98 84 L 88 98 C 80 110 88 122 98 122 Z" fill="url(#hzVtFold)"/>
+    <path d="M 48 26 C 42 26 36 32 40 42 L 82 136 C 88 150 106 154 118 144 C 126 138 132 126 130 112 L 124 96 C 118 106 108 116 98 116 C 90 116 84 108 80 98 L 58 34 C 56 28 52 26 48 26 Z" fill="url(#hzVtLeft)"/>
+    <g transform="rotate(24, 122, 70)">
+      <path d="M 98 16 C 98 11, 102 7, 107 7 L 141 7 C 146 7, 150 11, 150 16 L 150 34 C 144 34, 139 39, 139 45 C 139 51, 144 56, 150 56 L 150 102 C 150 107, 146 111, 141 111 L 107 111 C 102 111, 98 107, 98 102 L 98 56 C 104 56, 109 51, 109 45 C 109 39, 104 34, 98 34 Z" fill="url(#hzVtTicket)"/>
+      <line x1="102" y1="56" x2="146" y2="56" stroke="#ffffff" stroke-width="2.5" stroke-dasharray="3.5,3.5" stroke-linecap="round" opacity="0.85"/>
+      <g transform="translate(124, 31) scale(1.15)">
+        <circle cx="-6.5" cy="-6.5" r="3.2" stroke="#ffffff" stroke-width="2.4" fill="none"/>
+        <line x1="7.5" y1="-8" x2="-7.5" y2="8" stroke="#ffffff" stroke-width="2.8" stroke-linecap="round"/>
+        <circle cx="6.5" cy="6.5" r="3.2" stroke="#ffffff" stroke-width="2.4" fill="none"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Typography -->
+  <g transform="translate(86, 44)">
+    <text font-family="system-ui, -apple-system, 'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="32" letter-spacing="-0.5">
+      <tspan fill="currentColor">Vouch</tspan><tspan fill="#8B5CF6">Trim</tspan>
+    </text>
+    <text y="18" font-family="system-ui, -apple-system, 'Plus Jakarta Sans', sans-serif" font-weight="600" font-size="8.5" fill="#94A3B8" letter-spacing="2.2">
+      MORE DEALS. MORE SAVINGS.
+    </text>
+  </g>
+</svg>
